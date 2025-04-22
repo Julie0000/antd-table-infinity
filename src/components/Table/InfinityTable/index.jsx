@@ -357,6 +357,7 @@ class InfinityTable extends PureComponent {
           columns={columns}
           dataSource={dataSource.slice(startIndex, startIndex + pageSize)}
           pagination={false}
+          footer={() => <p>123</p>}
         />
       </Fragment>
     );
@@ -402,4 +403,4 @@ export default React.forwardRef((props, ref) => (
   <InfinityTable {...props} forwardedRef={ref} />
 ));
 
-export { InfinityTable }
+export { InfinityTable };
